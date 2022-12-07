@@ -1,7 +1,7 @@
 import "./PokemonItem.css";
 const PokemonItem = (props) => {
 	return (
-		<article>
+		<article className="pokemon-item-container">
 			<img
 				className="pokemon-sprite"
 				src={props.img}
