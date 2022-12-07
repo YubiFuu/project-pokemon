@@ -11,7 +11,9 @@ const Nav = () => {
                 <img src={pokemon} alt="pokemon" />
             </Link>
             <div>
-                <img src={Burger} alt="Burger icon" />
+                <Link to={"/type"}>
+                    <img src={Burger} alt="Burger icon" />
+                </Link>
                 <input type="text" placeholder="Search Pokemon" />
                 <img src={DarkMode} alt="Darkmode icon" />
             </div>
