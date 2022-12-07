@@ -11,7 +11,9 @@ body {
     border-radius: 10px;
     aspect-ratio: 2 / 5;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
 }
 
 .dark {
