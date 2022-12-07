@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../../public/fonts/Roboto-Medium.ttf");
+}
+
+.type-h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 23px;
+  color: #ffcb05;
+  -webkit-text-stroke: 1px #2c72b8;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.type-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 0 184px;
+}
+.type-grid-item {
+  padding: 9.5px 0px 9.5px 0px;
+  width: 120px;
+  font-size: 0.875rem;
+  font-weight: 900;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+.type-search-button {
+  text-transform: uppercase;
+  color: #2c72b8;
+  background-color: #ffcb05;
+  font-size: 1.5rem;
+  border: 5px solid #2c72b8;
+  border-radius: 10px;
+  font-weight: 900;
+  padding: 12px 45px 12px 45px;
+  /* margin: 0 25%; */
+  /* margin: 0; */
+  grid-column: span 2;
+  /* width: 194px; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.color1 {
+  background-color: #3bb900;
+  color: white;
+}
+.color2 {
+  background-color: #1c1c1c;
+  color: white;
+}
+.color3 {
+  background-color: #00458a;
+  color: white;
+}
+.color4 {
+  background-color: #ffe600;
+  color: white;
+}
+.color5 {
+  background-color: #ffc2f9;
+  color: white;
+}
+.color6 {
+  background-color: #e40000;
+  color: white;
+}
+.color7 {
+  background-color: #ff9900;
+  color: white;
+}
+.color8 {
+  background-color: #ccdadd;
+  color: white;
+}
+.color9 {
+  background-color: #5a1e64;
+  color: white;
+}
+.color10 {
+  background-color: #57921c;
+  color: white;
+}
+.color11 {
+  background-color: #965a00;
+  color: white;
+}
+.color12 {
+  background-color: #6ad2ff;
+  color: white;
+}
+.color13 {
+  background-color: #b3b3b3;
+  color: white;
+}
+.color14 {
+  background-color: #70df00;
+  color: white;
+}
+.color15 {
+  background-color: #ab00ae;
+  color: white;
+}
+.color16 {
+  background-color: #ff81f2;
+  color: white;
+}
+.color17 {
+  background-color: #e1b237;
+  color: white;
+}
+.color18 {
+  background-color: #2a4950;
+  color: white;
+}
+.color19 {
+  background-color: #00a0e4;
+  color: white;
+}
