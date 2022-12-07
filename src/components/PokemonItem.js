@@ -2,11 +2,14 @@ import "./PokemonItem.css";
 const PokemonItem = (props) => {
 	return (
 		<article>
-			<img src="" alt={props.pokename} />
-			<div>
+			<img
+				className="pokemon-sprite"
+				src={props.img}
+				alt={props.pokename}
+			/>
+			<div className="index-und-name">
+				<p>#0{props.index}</p>
 				<p>{props.pokename}</p>
-				<p>TEST</p>
-				<h1>This is PokemonItem</h1>
 			</div>
 		</article>
 	);

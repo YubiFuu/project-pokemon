@@ -1,0 +1,9 @@
+.index-und-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pokemon-sprite {
+	height: 150px;
+}
