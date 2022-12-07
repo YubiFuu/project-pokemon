@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import pokemon from "../img/pokemon.png";
 import Burger from "../img/Burger.png";
 import DarkMode from "../img/DarkMode.png";
-const Nav = () => {
+import React from "react";
+
+const Nav = ({ searchPokemon, setSearchPokemon }) => {
     console.log(pokemon);
+
     return (
         <header>
             <Link to={"/"}>
@@ -14,8 +17,22 @@ const Nav = () => {
                 <Link to={"/type"}>
                     <img src={Burger} alt="Burger icon" />
                 </Link>
-                <input type="text" placeholder="Search Pokemon" />
-                <img src={DarkMode} alt="Darkmode icon" />
+                <input
+                    type="text"
+                    value={searchPokemon}
+                    onChange={(e) => setSearchPokemon(e.target.value)}
+                    placeholder="Search Pokemon"
+                />
+                <p>{searchPokemon}</p>
+                <img
+                    onClick={() =>
+                        document.body.children[1].children[0].classList.toggle(
+                            "dark"
+                        )
+                    }
+                    src={DarkMode}
+                    alt="Darkmode icon"
+                />
             </div>
         </header>
     );
