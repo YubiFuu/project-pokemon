@@ -56,31 +56,6 @@ const Home = () => {
         return <p>is Loading</p>;
     }
 
-    // pokemonDetails2.sort(function (a, b) {
-    // 	if (a > b) return 1; // b is sorted before a
-    // 	if (a < b) return -1; // a is sorted before b
-    // 	return 0; // no change needed
-    // });
-
-    // ===================== SORT-Function-Strings ======================
-    function dynamicSort(property) {
-        let sortOrder = 1;
-
-        if (property[0] === "-") {
-            sortOrder = -1;
-            property = property.substr(1);
-        }
-
-        return function (a, b) {
-            if (sortOrder == -1) {
-                return b[property].localeCompare(a[property]);
-            } else {
-                return a[property].localeCompare(b[property]);
-            }
-        };
-    }
-    //=============================================================
-
     // ===================== SORT-Function-Numbers ======================
     function dynamicSortNumbers(property) {
         let sortOrder = 1;
@@ -89,50 +64,21 @@ const Home = () => {
             sortOrder = -1;
             property = property.substr(1);
         }
+        //=============================================================
 
-        return function (a, b) {
-            if (sortOrder == -1) {
-                return b[property] - a[property];
-            } else {
-                return a[property] - b[property];
-            }
-        };
+        console.log("Pokemon: ", pokemon);
+        console.log("PokemonDetailsURL : ", pokemonDetails);
+
+        // console.log("PokemonDetails2 : ", pokemonDetails2);
+        pokemonByURL.sort(dynamicSortNumbers("id"));
+        console.table("pokemonByURL: ", pokemonByURL);
+        // console.log("PokeImgURL= ", pokemonByURL[0].sprites.front_default);
+
+        return (
+            <div>
+                <TypeComponent />
+            </div>
+        );
     }
-    //=============================================================
-
-    console.log("Pokemon: ", pokemon);
-    console.log("PokemonDetailsURL : ", pokemonDetails);
-
-    // console.log("PokemonDetails2 : ", pokemonDetails2);
-    pokemonByURL.sort(dynamicSortNumbers("id"));
-    console.table("pokemonByURL: ", pokemonByURL);
-    // console.log("PokeImgURL= ", pokemonByURL[0].sprites.front_default);
-
-    return (
-        <div>
-            <TypeComponent />
-        </div>
-    );
 };
-
 export default Home;
-
-// return (
-// 	<main>
-// 		<section className="pokemon-container">
-// 			{pokemonByURL.map((elt, index) => {
-// 				return (
-// 					<Link to="../components/PokemonDetail.js">
-// 						<PokemonItem
-// 							key={index + elt}
-// 							pokename={elt.name}
-// 							index={index + 1}
-// 							img={elt.sprites.front_default}
-// 							id={elt.id}
-// 						/>
-// 					</Link>
-// 				);
-// 			})}
-// 		</section>
-// 	</main>
-// );

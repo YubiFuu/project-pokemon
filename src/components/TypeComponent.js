@@ -1,13 +1,11 @@
 import "./TypeComponent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
-const TypeComponent = ({ props }) => {
-    let [searchType, setSearchType] = useState();
-    let pokemonTypeInput;
+const TypeComponent = ({ searchType }) => {
+    // const [searchType, setSearchType] = useState()
     function onClickFunction(elt) {
         // console.log(elt.target.innerText.toLowerCase());
-        setSearchType(elt.target.innerText.toLowerCase());
+        searchType = elt.target.innerText.toLowerCase();
         console.log(searchType);
     }
 
@@ -17,7 +15,7 @@ const TypeComponent = ({ props }) => {
             <section className="type-grid-container">
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color1"
+                    className="type-grid-item bug"
                 >
                     Bug
                 </button>

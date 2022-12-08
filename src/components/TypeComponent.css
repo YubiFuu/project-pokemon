@@ -19,6 +19,8 @@
   gap: 20px;
   padding: 0 0 184px;
 }
+
+/* siehe Pokemondetails.css */
 .type-grid-item {
   padding: 9.5px 0px 9.5px 0px;
   width: 120px;
@@ -48,12 +50,12 @@
   align-items: center; */
 }
 
-.color1 {
+.bug {
   background-color: #3bb900;
   color: white;
 }
 
-.color1:hover {
+.bug:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: rgb(0, 0, 0);
@@ -72,12 +74,12 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color2 {
+.dark {
   background-color: #1c1c1c;
   color: white;
 }
 
-.color2:hover {
+.dark:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: black;
@@ -97,12 +99,12 @@
   cursor: pointer;
 }
 
-.color3 {
+.dragon {
   background-color: #00458a;
   color: white;
 }
 
-.color3:hover {
+.dragon:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: black;
@@ -117,11 +119,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color4 {
+.electric {
   background-color: #ffe600;
   color: white;
 }
-.color4:hover {
+.electric:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: yellow;
@@ -136,11 +138,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color5 {
+.fairy {
   background-color: #ffc2f9;
   color: white;
 }
-.color5:hover {
+.fairy:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: pink;
@@ -155,11 +157,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color6 {
+.fighting {
   background-color: #e40000;
   color: white;
 }
-.color6:hover {
+.fighting:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: red;
@@ -174,12 +176,12 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color7 {
+.fire {
   background-color: #ff9900;
   color: white;
 }
-.color7:hover {
-  background-color: #14240d;
+.fire:hover {
+  background-color: fighting#14240d;
   box-shadow: 3px 3px 3px grey;
   color: #ff9900;
   transition: all 1.5s;
@@ -193,11 +195,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color8 {
+.flying {
   background-color: #ccdadd;
   color: white;
 }
-.color8:hover {
+.flying:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: black;
@@ -212,11 +214,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color9 {
+.ghost {
   background-color: #5a1e64;
   color: white;
 }
-.color9:hover {
+.ghost:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #5a1e64;
@@ -231,11 +233,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color10 {
+.grass {
   background-color: #57921c;
   color: white;
 }
-.color10:hover {
+.grass:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #57921c;
@@ -250,11 +252,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color11 {
+.ground {
   background-color: #965a00;
   color: white;
 }
-.color11:hover {
+.ground:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #965a00;
@@ -269,11 +271,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color12 {
+.ice {
   background-color: #6ad2ff;
   color: white;
 }
-.color12:hover {
+.ice:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #6ad2ff;
@@ -288,11 +290,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color13 {
+.normal {
   background-color: #b3b3b3;
   color: white;
 }
-.color13:hover {
+.normal:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #b3b3b3;
@@ -307,11 +309,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color14 {
+.plant {
   background-color: #70df00;
   color: white;
 }
-.color14:hover {
+.plant:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #70df00;
@@ -326,11 +328,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color15 {
+.poison {
   background-color: #ab00ae;
   color: white;
 }
-.color15:hover {
+.poison:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #ab00ae;
@@ -345,11 +347,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color16 {
+.psychic {
   background-color: #ff81f2;
   color: white;
 }
-.color16:hover {
+.psychic:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #ff81f2;
@@ -364,11 +366,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color17 {
+.rock {
   background-color: #e1b237;
   color: white;
 }
-.color17:hover {
+.rock:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #e1b237;
@@ -383,11 +385,11 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color18 {
+.steel {
   background-color: #2a4950;
   color: white;
 }
-.color18:hover {
+.steel:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #2a4950;
@@ -402,12 +404,12 @@
   transform: scale(1.125, 1.25) translate(5px, 5px);
   cursor: pointer;
 }
-.color19 {
+.water {
   background-color: #00a0e4;
   color: white;
 }
 
-.color19:hover {
+.water:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: #00a0e4;
