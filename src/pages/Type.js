@@ -1,172 +1,143 @@
-import "./Type.css";
-import { Link } from "react-router-dom";
-const Type = (setSearchType) => {
-    function onClickFunction(elt) {
-        // console.log(elt.target.innerText.toLowerCase());
-        setSearchType(elt.target.innerText.toLowerCase());
-    }
+import { useState, useEffect } from "react";
+import PokemonItem from "../components/PokemonItem";
+import TypeComponent from "../components/TypeComponent";
+import "./Home.css";
 
+const Home = () => {
+    const [pokemon, setPokemon] = useState([]);
+    let [pokemonDetails, setPokemonDetails] = useState([]);
+    let [pokemonDetails2, setPokemonDetails2] = useState([]);
+    let [pokemonByURL, setPokemonByURL] = useState([]);
+    let [pokemonFiltered, setPokemonFiltered] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    let [typeInput, setTypeInput] = useState();
+
+    useEffect(() => {
+        fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=50")
+            .then((res) => res.json())
+            .then((json) => {
+                setPokemon(json.results);
+
+                let pokeUrl = [];
+
+                json.results.map((elt) => {
+                    pokeUrl.push(`${elt.url}`);
+                });
+                setPokemonDetails((pokemonDetails = pokeUrl));
+                let pokeUrl2 = [];
+                pokemonDetails.map((elt) => {
+                    fetch(elt)
+                        .then((response) => response.json())
+                        .then((json) => {
+                            pokeUrl2.push(json.forms[0]?.url);
+
+                            setPokemonDetails2((pokemonDetails2 = pokeUrl2));
+
+                            // if (isLoading) {
+                            // 	return <div>Daten noch nicht bereit...</div>;
+                            // }
+                            let pokemonEinzeln = [];
+                            pokemonDetails2.map((elt) => {
+                                fetch(elt)
+                                    .then((res2) => res2.json())
+                                    .then((json) => {
+                                        pokemonEinzeln.push(json);
+                                        // console.log("JSON: ", json);
+                                        setPokemonByURL(
+                                            (pokemonByURL = pokemonEinzeln)
+                                        );
+                                        setPokemonFiltered(
+                                            (pokemonFiltered = pokemonEinzeln)
+                                        );
+                                        setIsLoading(false);
+                                    });
+                            });
+                        });
+                });
+            });
+    }, []);
+
+    if (isLoading) {
+        return <p>is Loading</p>;
+    }
+    const filterType = () => {
+        const filtered = pokemonByURL.filter((poke) => {
+            return poke.types[0].type.name.includes(typeInput);
+        });
+        setPokemonFiltered(filtered);
+    };
+
+    // pokemonDetails2.sort(function (a, b) {
+    // 	if (a > b) return 1; // b is sorted before a
+    // 	if (a < b) return -1; // a is sorted before b
+    // 	return 0; // no change needed
+    // });
+
+    // ===================== SORT-Function-Strings ======================
+    function dynamicSort(property) {
+        let sortOrder = 1;
+
+        if (property[0] === "-") {
+            sortOrder = -1;
+            property = property.substr(1);
+        }
+
+        return function (a, b) {
+            if (sortOrder == -1) {
+                return b[property].localeCompare(a[property]);
+            } else {
+                return a[property].localeCompare(b[property]);
+            }
+        };
+    }
+    //=============================================================
+
+    // ===================== SORT-Function-Numbers ======================
+    function dynamicSortNumbers(property) {
+        let sortOrder = 1;
+
+        if (property[0] === "-") {
+            sortOrder = -1;
+            property = property.substr(1);
+        }
+
+        return function (a, b) {
+            if (sortOrder == -1) {
+                return b[property] - a[property];
+            } else {
+                return a[property] - b[property];
+            }
+        };
+    }
+    //=============================================================
+
+    console.log("Pokemon: ", pokemon);
+    console.log("PokemonDetailsURL : ", pokemonDetails);
+
+    // console.log("PokemonDetails2 : ", pokemonDetails2);
+    pokemonByURL.sort(dynamicSortNumbers("id"));
+    console.table("pokemonByURL: ", pokemonByURL);
+    // console.log("PokeImgURL= ", pokemonByURL[0].sprites.front_default);
+    console.log("I: " + typeInput);
     return (
         <main>
-            <h2 className="type-h1">Type</h2>
-            <section className="type-grid-container">
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color1"
-                    >
-                        Bug
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color2"
-                    >
-                        Dark
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color3"
-                    >
-                        Dragon
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color4"
-                    >
-                        Electric
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color5"
-                    >
-                        Fairy
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color6"
-                    >
-                        Fighting
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color7"
-                    >
-                        Fire
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color8"
-                    >
-                        Flying
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color9"
-                    >
-                        Ghost
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color10"
-                    >
-                        Grass
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color11"
-                    >
-                        Ground
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color12"
-                    >
-                        Ice
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color13"
-                    >
-                        Normal
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color14"
-                    >
-                        Plant
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color15"
-                    >
-                        Poison
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color16"
-                    >
-                        Psychic
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color17"
-                    >
-                        Rock
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color18"
-                    >
-                        Steel
-                    </button>
-                </Link>
-                <Link to="/">
-                    <button
-                        onClick={onClickFunction}
-                        className="type-grid-item color19"
-                    >
-                        Water
-                    </button>
-                </Link>
-                {/* <div className="type-grid-item"> </div> */}
-                <button className="type-search-button">Search</button>
+            <TypeComponent searchType={setTypeInput(1)} />
+            <section className="pokemon-container">
+                {pokemonFiltered.map((elt, index) => {
+                    return (
+                        <PokemonItem
+                            key={index + elt}
+                            pokename={elt.name}
+                            index={index + 1}
+                            img={elt.sprites.front_default}
+                            id={elt.id}
+                            pokeid={elt.id}
+                        />
+                    );
+                })}
             </section>
         </main>
     );
 };
 
-export default Type;
+export default Home;
