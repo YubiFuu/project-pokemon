@@ -36,16 +36,26 @@ const PokemonDetail = () => {
         {pokeDetails.types.map((elt, index) => {
           return (
             // type-grid-item bezieht sich auf eine Klasse in der Type.css
-            <button className={elt.type.name} key={index + elt}>
+            <button
+              className={`type-grid-item type-grid-border ${elt.type.name}`}
+              key={index + elt}
+            >
               {elt.type.name}
             </button>
           );
         })}
       </div>
       <div className="attacks-moves">
-        <h2>Attacks and Moves</h2>
+        <h2 className="attack-moves-h2">Attacks and Moves</h2>
         {pokeDetails.abilities.map((element, ind) => {
-          return <h2 key={element + ind}>{element.ability.name}</h2>;
+          return (
+            <h2
+              className={`attack-move-item ${element.ability.name}`}
+              key={element + ind}
+            >
+              {element.ability.name}
+            </h2>
+          );
         })}
       </div>
     </div>
