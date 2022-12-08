@@ -17,75 +17,75 @@ const TypeComponent = ({ searchType }) => {
           Bug
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color2">
+        <button onClick={onClickFunction} className="type-grid-item dark">
           Dark
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color3">
+        <button onClick={onClickFunction} className="type-grid-item dragon">
           Dragon
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color4">
+        <button onClick={onClickFunction} className="type-grid-item electric">
           Electric
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color5">
+        <button onClick={onClickFunction} className="type-grid-item fairy">
           Fairy
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color6">
+        <button onClick={onClickFunction} className="type-grid-item fighting">
           Fighting
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color7">
+        <button onClick={onClickFunction} className="type-grid-item fire">
           Fire
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color8">
+        <button onClick={onClickFunction} className="type-grid-item flying">
           Flying
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color9">
+        <button onClick={onClickFunction} className="type-grid-item ghost">
           Ghost
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color10">
+        <button onClick={onClickFunction} className="type-grid-item grass">
           Grass
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color11">
+        <button onClick={onClickFunction} className="type-grid-item ground">
           Ground
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color12">
+        <button onClick={onClickFunction} className="type-grid-item ice">
           Ice
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color13">
+        <button onClick={onClickFunction} className="type-grid-item normal">
           Normal
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color14">
+        <button onClick={onClickFunction} className="type-grid-item plant">
           Plant
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color15">
+        <button onClick={onClickFunction} className="type-grid-item poision">
           Poison
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color16">
+        <button onClick={onClickFunction} className="type-grid-item psychic">
           Psychic
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color17">
+        <button onClick={onClickFunction} className="type-grid-item rock">
           Rock
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color18">
+        <button onClick={onClickFunction} className="type-grid-item steel">
           Steel
         </button>
 
-        <button onClick={onClickFunction} className="type-grid-item color19">
+        <button onClick={onClickFunction} className="type-grid-item water">
           Water
         </button>
 
