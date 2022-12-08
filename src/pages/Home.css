@@ -3,3 +3,11 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
 }
+
+.pokemon-container a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import PokemonItem from "../components/PokemonItem";
 import "./Home.css";
 const Home = () => {
@@ -54,11 +55,11 @@ const Home = () => {
 		return <p>is Loading</p>;
 	}
 
-	pokemonDetails2.sort(function (a, b) {
-		if (a > b) return 1; // b is sorted before a
-		if (a < b) return -1; // a is sorted before b
-		return 0; // no change needed
-	});
+	// pokemonDetails2.sort(function (a, b) {
+	// 	if (a > b) return 1; // b is sorted before a
+	// 	if (a < b) return -1; // a is sorted before b
+	// 	return 0; // no change needed
+	// });
 
 	// ===================== SORT-Function-Strings ======================
 	function dynamicSort(property) {
@@ -116,13 +117,34 @@ const Home = () => {
 							pokename={elt.name}
 							index={index + 1}
 							img={elt.sprites.front_default}
+							id={elt.id}
+							pokeid={elt.id}
 						/>
 					);
 				})}
-				<h1>This is HOME2</h1>
 			</section>
 		</main>
 	);
 };
 
 export default Home;
+
+// return (
+// 	<main>
+// 		<section className="pokemon-container">
+// 			{pokemonByURL.map((elt, index) => {
+// 				return (
+// 					<Link to="../components/PokemonDetail.js">
+// 						<PokemonItem
+// 							key={index + elt}
+// 							pokename={elt.name}
+// 							index={index + 1}
+// 							img={elt.sprites.front_default}
+// 							id={elt.id}
+// 						/>
+// 					</Link>
+// 				);
+// 			})}
+// 		</section>
+// 	</main>
+// );
