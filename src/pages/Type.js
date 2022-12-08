@@ -3,7 +3,7 @@ import PokemonItem from "../components/PokemonItem";
 import TypeComponent from "../components/TypeComponent";
 import "./Home.css";
 
-const Home = () => {
+const Type = () => {
     const [pokemon, setPokemon] = useState([]);
     let [pokemonDetails, setPokemonDetails] = useState([]);
     let [pokemonDetails2, setPokemonDetails2] = useState([]);
@@ -81,4 +81,4 @@ const Home = () => {
         );
     }
 };
-export default Home;
+export default Type;

@@ -1,8 +1,10 @@
 import "./TypeComponent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 const TypeComponent = ({ searchType }) => {
     // const [searchType, setSearchType] = useState()
+
     function onClickFunction(elt) {
         // console.log(elt.target.innerText.toLowerCase());
         searchType = elt.target.innerText.toLowerCase();
@@ -22,131 +24,129 @@ const TypeComponent = ({ searchType }) => {
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color2"
+                    className="type-grid-item dark"
                 >
                     Dark
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color3"
+                    className="type-grid-item dragon"
                 >
                     Dragon
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color4"
+                    className="type-grid-item electric"
                 >
                     Electric
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color5"
+                    className="type-grid-item fairy"
                 >
                     Fairy
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color6"
+                    className="type-grid-item fighting"
                 >
                     Fighting
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color7"
+                    className="type-grid-item fire"
                 >
                     Fire
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color8"
+                    className="type-grid-item flying"
                 >
                     Flying
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color9"
+                    className="type-grid-item ghost"
                 >
                     Ghost
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color10"
+                    className="type-grid-item grass"
                 >
                     Grass
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color11"
+                    className="type-grid-item ground"
                 >
                     Ground
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color12"
+                    className="type-grid-item ice"
                 >
                     Ice
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color13"
+                    className="type-grid-item normal"
                 >
                     Normal
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color14"
+                    className="type-grid-item plant"
                 >
                     Plant
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color15"
+                    className="type-grid-item poison"
                 >
                     Poison
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color16"
+                    className="type-grid-item psychic"
                 >
                     Psychic
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color17"
+                    className="type-grid-item rock"
                 >
                     Rock
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color18"
+                    className="type-grid-item steel"
                 >
                     Steel
                 </button>
 
                 <button
                     onClick={onClickFunction}
-                    className="type-grid-item color19"
+                    className="type-grid-item water"
                 >
                     Water
                 </button>
-
-                {/* <div className="type-grid-item"> </div> */}
                 <button className="type-search-button">Search</button>
             </section>
         </main>
