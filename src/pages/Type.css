@@ -52,75 +52,373 @@
   background-color: #3bb900;
   color: white;
 }
+
+.color1:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: rgb(0, 0, 0);
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(190, 200, 177, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(
+      336deg,
+      rgba(98, 255, 179, 0.8),
+      rgba(239, 255, 63, 0) 70.71%
+    );
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color2 {
   background-color: #1c1c1c;
   color: white;
 }
+
+.color2:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: black;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(190, 200, 177, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(
+      336deg,
+      rgba(164, 167, 166, 0.8),
+      rgba(239, 255, 63, 0) 70.71%
+    );
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
+
 .color3 {
   background-color: #00458a;
   color: white;
+}
+
+.color3:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: black;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color4 {
   background-color: #ffe600;
   color: white;
 }
+.color4:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: yellow;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color5 {
   background-color: #ffc2f9;
   color: white;
+}
+.color5:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: pink;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color6 {
   background-color: #e40000;
   color: white;
 }
+.color6:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: red;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color7 {
   background-color: #ff9900;
   color: white;
+}
+.color7:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #ff9900;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color8 {
   background-color: #ccdadd;
   color: white;
 }
+.color8:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: black;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color9 {
   background-color: #5a1e64;
   color: white;
+}
+.color9:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #5a1e64;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color10 {
   background-color: #57921c;
   color: white;
 }
+.color10:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #57921c;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color11 {
   background-color: #965a00;
   color: white;
+}
+.color11:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #965a00;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color12 {
   background-color: #6ad2ff;
   color: white;
 }
+.color12:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #6ad2ff;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color13 {
   background-color: #b3b3b3;
   color: white;
+}
+.color13:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #b3b3b3;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color14 {
   background-color: #70df00;
   color: white;
 }
+.color14:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #70df00;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color15 {
   background-color: #ab00ae;
   color: white;
+}
+.color15:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #ab00ae;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color16 {
   background-color: #ff81f2;
   color: white;
 }
+.color16:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #ff81f2;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color17 {
   background-color: #e1b237;
   color: white;
+}
+.color17:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #e1b237;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
 .color18 {
   background-color: #2a4950;
   color: white;
 }
+.color18:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #2a4950;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
+}
 .color19 {
   background-color: #00a0e4;
   color: white;
+}
+
+.color19:hover {
+  background-color: #14240d;
+  box-shadow: 3px 3px 3px grey;
+  color: #00a0e4;
+  transition: all 1.5s;
+  background: linear-gradient(
+      217deg,
+      rgba(63, 99, 255, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(149, 176, 149, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 69, 47, 0.8), rgba(45, 102, 224, 0) 70.71%);
+  transform: scale(1.125, 1.25) translate(5px, 5px);
+  cursor: pointer;
 }
