@@ -8,9 +8,7 @@ const Home = () => {
     let [pokemonDetails, setPokemonDetails] = useState([]);
     let [pokemonDetails2, setPokemonDetails2] = useState([]);
     let [pokemonByURL, setPokemonByURL] = useState([]);
-    let [pokemonFiltered, setPokemonFiltered] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    let [typeInput, setTypeInput] = useState();
 
     useEffect(() => {
         fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=50")
@@ -46,9 +44,6 @@ const Home = () => {
                                         setPokemonByURL(
                                             (pokemonByURL = pokemonEinzeln)
                                         );
-                                        setPokemonFiltered(
-                                            (pokemonFiltered = pokemonEinzeln)
-                                        );
                                         setIsLoading(false);
                                     });
                             });
@@ -60,12 +55,6 @@ const Home = () => {
     if (isLoading) {
         return <p>is Loading</p>;
     }
-    const filterType = () => {
-        const filtered = pokemonByURL.filter((poke) => {
-            return poke.types[0].type.name.includes(typeInput);
-        });
-        setPokemonFiltered(filtered);
-    };
 
     // pokemonDetails2.sort(function (a, b) {
     // 	if (a > b) return 1; // b is sorted before a
@@ -118,26 +107,32 @@ const Home = () => {
     pokemonByURL.sort(dynamicSortNumbers("id"));
     console.table("pokemonByURL: ", pokemonByURL);
     // console.log("PokeImgURL= ", pokemonByURL[0].sprites.front_default);
-    console.log("I: " + typeInput);
+
     return (
-        <main>
-            <TypeComponent searchType={setTypeInput(1)} />
-            <section className="pokemon-container">
-                {pokemonFiltered.map((elt, index) => {
-                    return (
-                        <PokemonItem
-                            key={index + elt}
-                            pokename={elt.name}
-                            index={index + 1}
-                            img={elt.sprites.front_default}
-                            id={elt.id}
-                            pokeid={elt.id}
-                        />
-                    );
-                })}
-            </section>
-        </main>
+        <div>
+            <TypeComponent />
+        </div>
     );
 };
 
 export default Home;
+
+// return (
+// 	<main>
+// 		<section className="pokemon-container">
+// 			{pokemonByURL.map((elt, index) => {
+// 				return (
+// 					<Link to="../components/PokemonDetail.js">
+// 						<PokemonItem
+// 							key={index + elt}
+// 							pokename={elt.name}
+// 							index={index + 1}
+// 							img={elt.sprites.front_default}
+// 							id={elt.id}
+// 						/>
+// 					</Link>
+// 				);
+// 			})}
+// 		</section>
+// 	</main>
+// );

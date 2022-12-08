@@ -1,11 +1,13 @@
 import "./TypeComponent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-const TypeComponent = ({ searchType }) => {
-    // const [searchType, setSearchType] = useState()
+
+const TypeComponent = ({ props }) => {
+    let [searchType, setSearchType] = useState();
+    let pokemonTypeInput;
     function onClickFunction(elt) {
         // console.log(elt.target.innerText.toLowerCase());
-        searchType = elt.target.innerText.toLowerCase();
+        setSearchType(elt.target.innerText.toLowerCase());
         console.log(searchType);
     }
 

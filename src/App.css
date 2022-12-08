@@ -16,7 +16,7 @@ body {
     align-items: center;
 }
 
-.dark {
+.dark-layout {
     background-color: black;
     color: rgb(82, 82, 82);
 }

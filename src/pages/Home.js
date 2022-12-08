@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import PokemonItem from "../components/PokemonItem";
 import "./Home.css";
-import Type from "./Type";
 
 const Home = () => {
     const [pokemon, setPokemon] = useState([]);

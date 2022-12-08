@@ -27,7 +27,7 @@ const Nav = ({ searchPokemon, setSearchPokemon }) => {
                 <img
                     onClick={() =>
                         document.body.children[1].children[0].classList.toggle(
-                            "dark"
+                            "dark-layout"
                         )
                     }
                     src={DarkMode}
