@@ -36,7 +36,7 @@ const PokemonDetail = () => {
         {pokeDetails.types.map((elt, index) => {
           return (
             // type-grid-item bezieht sich auf eine Klasse in der Type.css
-            <button className="type-grid-item" key={index + elt}>
+            <button className={elt.type.name} key={index + elt}>
               {elt.type.name}
             </button>
           );

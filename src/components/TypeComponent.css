@@ -50,12 +50,12 @@
   align-items: center; */
 }
 
-.color1 {
+.bug {
   background-color: #3bb900;
   color: white;
 }
 
-.color1:hover {
+.bug:hover {
   background-color: #14240d;
   box-shadow: 3px 3px 3px grey;
   color: rgb(0, 0, 0);
