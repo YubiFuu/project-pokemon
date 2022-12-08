@@ -51,6 +51,7 @@ const Home = () => {
 			});
 	}, []);
 
+	pokemonByURL.sort(dynamicSortNumbers("id"));
 	if (isLoading) {
 		return <p>is Loading</p>;
 	}
@@ -103,7 +104,7 @@ const Home = () => {
 	console.log("PokemonDetailsURL : ", pokemonDetails);
 
 	// console.log("PokemonDetails2 : ", pokemonDetails2);
-	pokemonByURL.sort(dynamicSortNumbers("id"));
+
 	console.table("pokemonByURL: ", pokemonByURL);
 	// console.log("PokeImgURL= ", pokemonByURL[0].sprites.front_default);
 
